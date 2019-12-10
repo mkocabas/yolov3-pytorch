@@ -35,7 +35,7 @@ class YOLOv3:
         os.makedirs(os.path.dirname(model_def), exist_ok=True)
 
         if not os.path.isfile(model_def):
-            url = 'https://gitlab.tuebingen.mpg.de/mkocabas/yolov3/raw/master/yolov3/config/yolov3.cfg'
+            url = 'https://raw.githubusercontent.com/mkocabas/yolov3-pytorch/master/yolov3/config/yolov3.cfg'
             outdir = os.path.dirname(model_def)
             download_url(url, outdir)
 
